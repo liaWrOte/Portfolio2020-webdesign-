@@ -1,0 +1,54 @@
+// MIXINS
+//=======================================
+
+// Gestion des effets de transition
+// Usage: @include transition([property],[duration],[timing], [delay]);
+
+@mixin transition($property: all, $duration: $default-transition-duration, $timing: ease, $delay: 0s) {
+  @each $prefix in $prefixes {
+	#{$prefix}transition: $property $duration $timing $delay;
+  }
+}
+
+// Ajout des préfixes pour la propriété box-sizing
+// Usage: @include box-sizing([type]);
+
+@mixin box-sizing($type: border-box) {
+  @each $prefix in $prefixes {
+	#{$prefix}box-sizing: $type;
+  }
+}
+
+// Modifie la couleur du surlignage de selection
+// Usage: @include selection([color], [background]);
+
+@mixin selection($color, $background){
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection{
+      color: $color;
+      background: $background;
+      text-shadow: none;
+    }
+  }
+}
+
+// Gère les problèmes de débordement de margin
+
+@mixin clearfix(){
+  &:before,
+  &:after{
+    content: " "; 
+    display: table; 
+  }
+
+  &:after{
+    display: block;
+    clear: both;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+  &{
+    *zoom: 1;
+  }
+}

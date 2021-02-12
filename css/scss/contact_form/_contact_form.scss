@@ -1,0 +1,167 @@
+#contact {
+	width: 70%;
+	height: auto;
+	background-color: $main-color5;
+	margin:  0 auto 10% auto;
+	padding: 1% 0 3% 0;
+	border-radius: 4px;
+}
+
+#contact_accroche {
+		text-align: center;
+	}
+
+#contact-title {
+	color: $main-color4;
+}
+
+.contact-content {
+	margin-top: -5vh;
+}
+
+#profil {
+	width: 100%;
+	margin: -5vh auto 0 auto;
+	text-align: center;
+	z-index: 10;
+	img {
+		border-radius: 4px;
+	}
+}
+
+#contact_right {
+	width: 70%;
+	margin: 4vh auto 1vw auto;
+	padding: 3.5vw;
+	background-color: $main-color6;
+	border-radius: 4px;
+}
+
+
+.row_contact {
+	display: grid;
+	grid-template-columns: 4fr 1fr 4fr;
+	grid-row-gap: 1vw;
+
+	img {
+		width: 25px;
+		height: auto;
+		align-self: center;
+		justify-self: center;
+	}
+}
+
+.row_contact p:first-child {
+	text-align: right;
+}
+form {
+	width: 100%;
+	height: auto;
+}
+
+input {
+	width: 70%;
+	padding: 1% 1%;
+	display: block;
+	margin: auto;
+	background-color: $main-color6;
+	border: 2px solid $main-color6;
+	border-radius: 12px;
+	resize: none;
+}
+
+textarea {
+	width: 70%;
+	padding: 1% 1%;
+	display: block;
+	margin: auto;
+	background-color: $main-color6;
+	border: 2px solid $main-color6;
+	border-radius: 12px;
+	resize: none;
+}
+
+
+
+// Hover
+
+input:hover {
+		border: 2px solid $main-color4;
+}
+
+textarea:hover {
+		border: 2px solid $main-color4;
+}
+
+// Boutons
+
+.button {
+	display: block;
+	width: 50%;
+	margin: 3% auto;
+ 	background-color: $main-color6;
+ 	border: 2px solid $main-color6;
+ 	border-radius: 12px;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	font-family: tenso, arial, sans-serif;
+	font-size: 1.5em;
+	color: $main-color4;
+}
+
+.button:hover {
+	background-color: $main-color6;
+ 	border: 2px solid $main-color4;
+}
+
+/* Responsive tablette
+/*=====================================*/
+
+@media (max-width: 1281px) {
+
+  #contact {
+  	width: 100%;
+  }
+
+  #contact_right {
+	width: 75%;
+	padding: 2vw;
+	margin: 5vh auto 1vh auto;
+	}
+
+  #profil {
+  	margin-top: 1vh;
+  }
+
+  .row_contact img {
+  	margin-left: 2.5vw;
+  }
+}
+
+
+/* Responsive smartphone */
+
+@media (max-width: 770px) {
+
+	#contact {
+		margin-bottom: 8vh;
+	}
+
+	#profil {
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+	}
+
+	#contact_right {
+		width: 95%;
+		padding: 3vw;
+	}
+
+	.row_contact {
+		grid-template-columns: 1fr 5fr;
+	}
+
+	.row_contact p:first-child  {
+			display: none;
+	}
+}

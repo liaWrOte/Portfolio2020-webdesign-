@@ -1,0 +1,248 @@
+/**** Services PICTOS  ****/
+
+#services {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* pictos animés */
+
+.brown {
+  width: 110%;
+  height: 50px;
+  background-color: $main-color2;
+  position: relative;
+  margin-top: -1%;
+  margin-left: -5%;
+  z-index: 2;
+}
+
+.animation_container {
+  width: 100%;
+	height: auto;
+	background-color: #d55614;
+	padding: 1% 10% 2% 10%;
+  border-radius: 4px;
+}
+
+.animation_container ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	overflow: hidden;
+  list-style: none;
+}
+
+
+.animation {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 4%;
+  padding: 1%;
+  list-style: none;
+}
+
+.active {
+	justify-content: flex-end;
+}
+
+
+
+
+/* définitions web design motion et graphisme */
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+	height: 415px;
+	background-color: $main-color6;
+	z-index: 100;
+  margin: -50px auto 0 auto;
+  border-radius: 4px;
+
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+  height: 400px;
+  text-align: center;
+}
+
+.small_slider {
+  display: none;
+}
+
+.paragraphe {
+  width: 70%;
+  margin: 2% auto;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  color: $main-color5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 4em;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.tablette {
+  display: none;
+}
+
+// cercles nav
+
+.circles {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: $main-color5;
+}
+
+
+// Carroussel logos clients
+
+.client {
+  width: 100%;
+	height: auto;
+	background-color: $main-color4;
+  margin-top: -80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 4px;
+    h4 {
+      color: $main-color1;
+    }
+}
+
+#carousel {
+	display: flex;
+}
+
+#carousel_container {
+	width: 90%;
+  margin: 0 auto;
+  	box-sizing: border-box;
+  	padding: 1em;
+  	color: white;
+  	font-weight: 200;
+  	display: flex;
+  	align-items: center;
+  	overflow: hidden;
+}
+
+// les logos doivent être écrits 2 fois, la doublure qui se superpose donne l'illusion du la loop infinie.
+.carousel_clients {
+	display: flex;
+    -webkit-animation: carousel_clients 17s running; /* Safari 4+ */
+  	-moz-animation: carousel_clients 17s running; /* Fx 5+ */
+  	-o-animation: carousel_clients 17s running; /* Opera 12+ */
+ 	animation: carousel_clients 17s running; /* IE 10+, Fx 29+ */
+ 	animation-iteration-count: infinite; 
+ 	animation-timing-function: linear;
+}
+
+.slide {
+	width: 200px;
+    margin: 0.5em;
+    padding: .5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes carousel_clients {
+  from
+    {transform: translateX(0); }
+  to
+    {transform: translateX(-50%); }
+}
+
+/* FIN FIN Services PICTOS  */
+
+
+/* Responsive tablette
+/*=====================================*/
+
+@media (max-width: 1240px) {
+
+    .brown {
+    display: none;
+}
+
+  .animation_container {
+    display: none;
+}
+
+  #slider {
+    display: none;
+}
+
+.small_slider {
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.small_services {
+  background-color: $main-color6;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 4px;
+}
+
+.client {
+  margin-top: 0;
+  padding-top: 3%;
+}
+
+}
+/* Responsive smartphone
+/*=====================================*/

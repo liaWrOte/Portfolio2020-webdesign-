@@ -1,0 +1,127 @@
+/* STYLE DE BASE
+/*=====================================*/
+
+
+// Variables
+
+$main-color1: #2d160e;
+$main-color2: #5c1619;
+$main-color3: #be2e09;
+$main-color4: #d5550e;
+$main-color5: #e7aa35;
+$main-color6: #e8e1d7;
+
+$title: 'anton', sans-serif;
+
+*{ @include box-sizing;}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0px;
+	background-color: $main-color2;
+}
+
+#all {
+	margin: 4%;
+}
+
+.ombre_portee {
+	box-shadow: 1px 1px 10px $main-color1;
+}
+
+.overflow {
+	overflow-y: hidden;
+}
+
+.overflow_go {
+	overflow-y: auto;
+	overflow-x: 0;
+}
+
+
+h1 {
+	font-family: $title, sans-serif;
+	font-size: 5vw;
+	color: $main-color5;
+	text-align: center;
+	margin: 0.5em auto 0.2em auto;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+@media (max-width: 720px) {
+
+h1 {
+	font-size: 6vw;
+}
+
+}
+
+
+h2 {
+	font-family: $title, sans-serif;
+	font-size: 2.5vw;
+	color: $main-color6;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+
+@media (max-width: 720px) {
+
+h2 {
+	font-size: 4vw;
+}
+
+}
+
+
+h3 {
+	font-family: $title, sans-serif;
+	font-size: 2em;
+	color: $main-color4;
+	margin: 0 auto 3% auto;
+}
+
+@media (max-width: 720px) {
+
+h3 {
+	font-size: 3.8vw;
+}
+
+}
+
+
+h4 {
+	font-family: $title, sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+	color: $main-color5;
+	font-weight: normal;
+}
+
+h5 {
+	font-family: tenso, sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	color: $main-color6;
+	font-weight: normal;
+}
+	
+p {
+	font-family: tenso, sans-serif;
+	font-size: 1em;
+	color: $main-color1;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.on {
+	display: block;
+}
+
+.off {
+	display: none;
+}

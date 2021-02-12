@@ -1,0 +1,16 @@
+// PLACEHOLDERS
+//=======================================
+
+
+%form-style{
+  padding-left: 25px;
+  font-family: "Open sans", sans-serif;
+  color: #737373;
+  border: 2px solid #e6e6e6;
+  @include transition;
+  &:hover, 
+  &:focus{
+    border-color: $primary-color;
+    outline: none;
+  }
+}

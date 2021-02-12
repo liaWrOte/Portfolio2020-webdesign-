@@ -1,0 +1,183 @@
+// Corner Modal
+
+#corner_modal {
+	position: absolute;
+	top: -250px;
+	left: -250px;
+	height: 500px;
+  width: 500px;
+  z-index: -1;
+  background-color: $main-color5;
+  border-radius: 50%;
+}
+
+
+
+
+/* Expand blocs */
+
+
+.modal-wrap, .modal-overlay {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-wrap {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+   z-index: 9999;
+}
+  .modal-overlay {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(45, 22, 14, 0.8);
+  }
+  
+  .modal-content {
+    background-color: $main-color6;
+    padding: 20px;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    position: fixed;
+    z-index: 12;
+    top: 50%;
+    left: 50%;
+ 	  transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 30px 0 0;
+    cursor: pointer;
+    color: $main-color4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 4em;
+    font-family: arial;
+  }
+   .modal-opened {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-content img {
+  max-width: 100%;
+  height: auto;
+}	
+
+.two_columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    text-align: left;
+    font-size: 1.8vw;
+    }
+  h1 {
+    text-align: left;
+    font-size: 3.5vw;
+  }
+  h2 {
+    color: $main-color2;
+    text-align: left;
+    font-size: 2vw;
+  }
+}
+
+.video_motion {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.two_columns>div {
+  justify-self: center;
+  align-self: middle;
+}
+
+.two_rows {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  margin-top: 3em;
+}
+
+.right_row {
+    margin-top: 3em;
+}
+
+.visit {
+  display: block;
+  width: 50%;
+  margin: 3% auto;
+  border: 2px solid $main-color4;
+  background-color: $main-color6;
+  padding: 1% 5%;
+  border-radius: 12px;
+  text-align: center;
+  
+  a:link {
+    text-decoration: none;
+  font-family: tenso, arial, sans-serif;
+  font-size: 1.1em;
+  color: $main-color4;
+  }
+}
+
+.visit:hover {
+  box-shadow: 0.2px 0.2px 10px $main-color1;
+}
+
+
+.color {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 2% 2% 2% 0;
+}
+/* Responsive tablette
+/*=====================================*/
+
+
+
+/* Responsive smartphone
+/*=====================================*/
+
+@media (max-width: 720px) {
+
+  .border {
+    width: 100%;
+  }
+
+  .categories {
+    display: grid;
+  }
+
+  .two_columns {
+  display: block;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 3%;
+  h3 {
+    font-size: 3vw;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+}
+
+.modal-content {
+    width: 90vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+}

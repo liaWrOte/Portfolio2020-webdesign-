@@ -1,0 +1,93 @@
+#header {
+	width: 100%;
+	height: auto;
+	display: table;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	
+}
+
+.split {
+	width: auto;
+	height: auto;
+	padding: 2% 1%;
+}
+
+.header_split h2{
+	color: black;
+}
+
+#video {
+	width: 50%;
+	height: auto;
+	display: table-cell;
+	vertical-align: top;
+}
+
+#presentation {
+	width: 50%;
+	height: auto;
+	background-color: #E8E1D7;
+	display: table-cell;
+	padding: 3vw;
+}
+
+#logo {
+	width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bonjour {
+}
+
+#salut {
+	padding: 2vw;
+}
+
+/* Responsive tablette
+/*=====================================*/
+
+@media (max-width: 1380px) {
+
+	#video {
+		display: none;
+	}
+
+	#presentation {
+		width: 100%;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	#logo {
+		width: 35%;
+		margin: 5% auto;
+	}
+	#salut {
+		padding: 0 17vw 3vw 17vw;
+	}
+
+}
+
+/* Responsive smartphone
+/*=====================================*/
+
+@media (max-width: 720px) {
+
+  #presentation {
+  	padding: 2em;
+  }
+
+  #logo {
+		width: 50%;
+		margin: 5% auto;
+	}
+	#salut {
+		padding: 2vw;
+	}
+
+}
